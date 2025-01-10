@@ -1,0 +1,420 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*::before
+::after{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+.nav-container {
+  display: flex;
+  align-items: center; /* Yatayda ortalamak için */
+  gap: 1rem; /* Öğeler arasındaki boşluğu ayarlayın */
+}
+
+.nav-color{
+  background: #52a447;
+  box-shadow: 0,8px,40px,0 rgba(235, 235, 235, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 20px;
+  -webkit-backdrop-filter: blur(2px); /* Safari için -webkit önekiyle bulanıklık efekti */
+  border-radius: 20px; /* Kenar yuvarlaklığı */
+}
+
+.glassCard{
+  background: rgba(2, 24, 32, 0.445);
+  box-shadow: 0,8px,40px,0 rgba(31,38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 20px;
+  border: 1px solid rgba(225, 255, 255,0.18);
+  width: 500px;
+  height: auto;
+}
+
+.glassCardData{
+  background: rgba(0, 0, 0, 0.527);
+  box-shadow: 0,8px,40px,0 rgba(31,38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 20px;
+  border: 1px solid rgba(10, 24, 230, 0.164);
+  width: auto;
+  height: auto;
+}
+
+.LoginglassCard{
+  background: rgba(2, 24, 32, 0.445);
+  box-shadow: 0,8px,40px,0 rgba(31,38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 20px;
+  border: 1px solid rgba(225, 255, 255,0.18);
+  width: 450px;
+  height: auto;
+}
+
+.Fontfamily {
+  font-family: "Zilla Slab", serif;
+  font-style: normal;
+  font-size: 75px;
+}
+
+.LogOutglassCard{
+  background: rgba(2, 24, 32, 0.445);
+  box-shadow: 0,8px,40px,0 rgba(31,38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 20px;
+  border: 1px solid rgba(225, 255, 255,0.18);
+  width: 400px;
+  height: auto;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.LocationCard{
+  background: rgba(2, 24, 32, 0.445);
+  box-shadow: 0,8px,40px,0 rgba(31,38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 20px;
+  border: 1px solid rgba(225, 255, 255,0.18);
+  width: 300px;
+}
+
+.HomeglassCard{
+  background: rgba(2, 24, 32, 0.445);
+  box-shadow: 0,8px,40px,0 rgba(31,38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 20px;
+  border: 1px solid rgba(225, 255, 255,0.18);
+  width: 500px;
+  height: 500px;
+  padding: 5%;
+}
+
+.degree{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+
+.button{
+  display: flex;
+  justify-content: center;
+  background-color: #cbe54e;
+  font-family: serif;
+  height: 50px;
+  width: auto;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  
+}
+
+.text{
+  font-family: serif;
+  text-align: center;
+  text-shadow: 3px 3px 2px black;
+  font-size: 30px;
+  color: white;
+}
+
+.text-weatherapp{
+  font-family: serif;
+  text-align: center;
+  text-shadow: 3px 3px 2px black;
+  color: white;
+  margin-right: auto;
+}
+
+.WeatherCardColor{
+  background-color: #5ba8a0;
+}
+
+.ApiCardColor{
+  background-color: #94b447;
+}
+
+.monthButton{
+  background: rgba(2, 24, 32, 0.445);
+  box-shadow: 0,8px,40px,0 rgba(31,38, 135, 0.37);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border-radius: 20px;
+  border: 1px solid rgba(225, 255, 255,0.18);
+  width: 300px;
+  text-align: center;
+  height: 40px;
+  font-size: 20px;
+}
+
+.d{
+  width: auto;
+  
+}
+
+.leaflet-container{
+  height: 70vh;
+}
+
+.menu {
+  width: 50px;
+  margin-right: auto; /* Sağdaki öğeye mesafe bırakır */
+}
+
+.menu-bar {
+  display: flex;
+  align-items: center;
+  text-decoration: none; /* Bağlantı alt çizgisini kaldırır */
+  color: inherit; /* Renk mirası alır */
+  width: 200px;
+}
+
+.menu-icon{
+  width: 40px;
+  margin-right: 10px;
+  margin-left: 8px;
+}
+
+.search{
+  margin-left: auto;
+}
+
+.signUp{
+  height: 50px;
+  width: 400px;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  background-color: #bfd200;
+}
+
+.forms{
+  height: 50px;
+  width: 400px;
+}
+
+.Side-by-side {
+  display: flex;
+  align-items: center; /* Dikeyde ortalamak için */
+  justify-content: center; /* Yatayda ortalamak için */
+}
+
+.login-png{
+  width: 200px;
+  height: auto;
+  margin-left: 30%;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+
+.ForgotCard{
+  margin-top: 5%;
+}
+
+.LogOut{
+  height: 50px;
+  width: 350px;
+  margin-top: 20px;
+  background-color: #bfd200;
+}
+
+.HappyTEMP{
+  font-size: 90px;
+  padding-top: 20px;
+}
+
+.Climate{
+  font-size: 60px;
+  padding-bottom: 20px;
+}
+
+
+
+/* Küçük ekranlar (640px ve üstü) */
+@media (min-width: 500px) {
+  .HappyTEMP {
+    padding-top: 50px;
+    padding-right: 50px;
+    font-size: 40px; /* 20px */
+  }
+  .Climate{
+    font-size: 15px; /* 14px */
+    padding-right: 30px;
+    padding-bottom: 20px;
+  }
+
+}
+
+/* Orta ekranlar (768px ve üstü) */
+@media (min-width: 768px) {
+  .HappyTEMP {
+    font-size: 70px; /* 20px */
+    padding-top: 20px;
+  }
+  .Climate{
+    font-size: 20px; /* 14px */
+    padding-bottom: 20px;
+  }
+
+}
+
+/* Büyük ekranlar (1024px ve üstü) */
+@media (min-width: 1024px) {
+  .HappyTEMP {
+    font-size: 90px; /* 20px */
+    padding-top: 20px;
+  }
+  .Climate{
+    font-size: 30px; /* 14px */
+    padding-bottom: 20px;
+  }
+
+}
+
+/* Ekstra büyük ekranlar (1280px ve üstü) */
+@media (min-width: 1280px) {
+  .HappyTEMP {
+    font-size: 90px; /* 20px */
+    padding-top: 20px;
+  }
+  .Climate{
+    font-size: 40px; /* 14px */
+    padding-bottom: 20px;
+  }
+
+}
+
+/* 2XL ekranlar (1536px ve üstü) */
+@media (min-width: 1536px) {
+  .HappyTEMP {
+    font-size: 90px; /* 20px */
+    padding-top: 20px;
+  }
+  .Climate{
+    font-size: 50px; /* 14px */
+    padding-bottom: 20px;
+  }
+
+}
+
+.Side-by-sideHome {
+  display: flex;
+  align-items: center; /* Dikeyde ortalamak için */
+  justify-content: center; /* Yatayda ortalamak için */
+  margin: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  background-color: #52a447;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-bottom: 150px;
+  border-radius: 10% 50%;
+}
+
+.GetStartedButton{
+    display: flex;
+    justify-content: center;
+    background-color: #bfd200;
+    font-family: serif;
+    height:auto;
+    width: 300px;
+}
+
+.Side-by-sideSwot {
+  display: flex;
+  align-items: center; /* Dikeyde ortalamak için */
+  justify-content: center; /* Yatayda ortalamak için */
+}
+
+.Swot{
+  width: 200px;
+  margin-top: 50px;
+}
+
+.Side-by-sideSwotCard {
+  display: flex;
+  align-items: center; /* Dikeyde ortalamak için */
+  justify-content: center; /* Yatayda ortalamak için */
+  gap: 5rem; 
+  
+}
+
+.swotCardColor{
+  background-color: #d6fa8c;
+}
+
+.swotCardColor2{
+  background-color: #beed53;
+}
+
+/* From Uiverse.io by PauloRFJ */ 
+.card {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 25px 25px;
+  gap: 20px;
+}
+
+/* for all social containers*/
+.socialContainer {
+  width: 25px;
+  height: 50px;
+  background-color: #236130;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  transition-duration: 1.2s;
+  border-radius: 15px 0 15px 0px;
+}
+/* instagram*/
+.containerOne:hover {
+  background-color: #bfd200;
+  transition-duration: 0.2s;
+}
+
+.socialContainer:active {
+  transform: scale(0.9);
+  transition-duration: 0.2s;
+}
+
+.socialSvg {
+  width: 17px;
+}
+
+.socialSvg path {
+  fill: rgb(24, 3, 3);
+}
+
+.socialContainer:hover .socialSvg {
+  animation: slide-in-top 0.2s both;
+}
+
+@keyframes slide-in-top {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.CommunacationCard{
+  background-color: 	#236130;
+  margin-top: 100px;
+  border-radius: 100% 100% 0% 0%;
+}
